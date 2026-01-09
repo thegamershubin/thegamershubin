@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Gamers Hub — Demo (Festive India)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="festive">
+  <header class="topbar">
+    <div class="left">
+      <img src="logo.png" alt="logo" class="logo" />
+      <div class="brand">
+        <div class="brand-name">The Gamers Hub</div>
+        <div class="tagline">Connecting Gamers, Creating Champions</div>
+      </div>
+    </div>
+    <div class="right">
+      <button id="signin-btn" class="btn ghost">Sign in</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Connecting Gamers, Creating Champions</h1>
+      <p class="lead">Festive India theme — quick demo of the tournaments UI (no payments on demo).</p>
+    </section>
+
+    <section id="tournaments" class="tournaments" aria-label="Tournaments">
+      <article class="card">
+        <div class="t-header">
+          <div>
+            <h3>BGMI Solo Showdown (Demo)</h3>
+            <div class="meta">Solo • 2026-01-15 • 6:00 PM IST</div>
+          </div>
+          <div class="badge">BGMI</div>
+        </div>
+
+        <p class="desc">4 matches, top eliminations & rank-based payouts. Demo only — no real payments.</p>
+
+        <div class="t-footer">
+          <div class="prizes">Fee: <strong>₹50</strong> • Prize: <strong>₹5,000</strong></div>
+          <div class="actions">
+            <button class="btn ghost" onclick="viewDemo()">View</button>
+            <button class="btn primary" id="register-btn">Register</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-body">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <h3 id="modal-title">Register — Demo</h3>
+      <p>This is a visual demo. Click "Confirm" to simulate registration.</p>
+      <div style="text-align:right">
+        <button class="btn ghost" onclick="closeModal()">Cancel</button>
+        <button class="btn primary" onclick="confirmRegister()">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <footer class="site-footer">
+    <div>© 2026 The Gamers Hub • AK ENTERPRISES</div>
+    <div>Contact: +91 82484 33141 • thegamershubin@gmail.com</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
